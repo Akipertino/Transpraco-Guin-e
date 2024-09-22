@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Transco Guinée: Connexion</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/login.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- Debut section navigation -->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="img-fluid" src="bootstrap/img/logo.png" alt="logo" style="width: 55px; margin-right: 10px;">Transpraco Guinée</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login.html">Connexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Inscription</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin setion navigation -->
+    <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+      </div>
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1 class="text-light">Connexion</h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <!-- Formulaire de connexion -->
+              <form id="stripe-login">
+                <div class="field padding-bottom--24">
+                  <label for="email">Email</label>
+                  <input type="email" name="email">
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password">Mot de passe</label>
+                  </div>
+                  <input type="password" name="mot de passe">
+                </div>
+                <div class="field padding-bottom--24">
+                  <input class="btn btn-outline-primary" type="submit" name="submit" value="Continuer">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-link padding-top--24">
+            <span style="font-size: 16px;">Vous n'avez pas de compte ? <a href="signup.html">S'inscrire</a></span>
+            <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+              <span><a href="#">© Transpraco Guinée</a></span>
+              <span><a href="#">Contact</a></span>
+              <span><a href="#">Politiques & Confidentialité</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+
+</html>
