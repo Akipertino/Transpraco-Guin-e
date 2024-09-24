@@ -1,70 +1,172 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Transpraco: Inscription</title>
+    <title>Transraco Guinée- Inscription</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/signup.css">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
-<body class="bg-primary">
-    <!-- Debut section navigation -->
-  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img class="img-fluid" src="bootstrap/img/logo.png" alt="logo" style="width: 55px; margin-right: 10px;">Transpraco Guinée</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Connexion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="signup.html">Inscription</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Fin setion navigation -->
-    <div class="container my-0 mx-auto">
-        <div class="row mx-auto justify-content-center">
-            <div class="col-md-6">
-                <div class="card my-5 py-5">
-                    <div class="card-body text-center">
-                        <h1 class="text-center mb-5 text-primary">Inscription</h3>
-                        <form>
-                            <div class="form-group mb-3">
-                                <input type="text" class="form-control" id="nomComplet" placeholder="Nom complet" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="password" class="form-control" id="motDePasse" placeholder="Mot de passe" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="password" class="form-control" id="confirmerMotDePasse" placeholder="Confirmez votre mot de passe" required>
-                            </div>
-                            <button type="submit" class="btn mt-3 btn-outline-primary btn-block">S'inscrire</button>
-                        </form>
-                        <div class="text-center mt-4">
-                            <p>Vous avez déjà un compte ? <a href="login.html">Se connecter</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body>
+    <!-- Debut section menu de navigation -->
+    <nav class="navbar navbar-expand-lg  navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="bootstrap/img/logo.png" alt="logo" style="width: 55px; margin-right: 10px;">Transraco Guinée</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="login.html">Connexion</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="signup.html">Inscription</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <!-- Fin section menu de navigation -->
+    <div id="main-container" class="container-fluid pt-5">
+      <!-- Contenu du formulaire -->
+      <div class="container">
+        <!-- Entête -->
+        <div class="text">
+           Inscription
+        </div>
+        <form action="#"> 
+           <div class="form-row">
+            <!-- Champ Nom complet -->
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Nom complet</label>
+              </div>
+              <!-- Champ Email -->
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Email</label>
+              </div>
+              <!-- Champ Mot de passe -->
+              <div class="input-data">
+                 <input type="password" required>
+                 <div class="underline"></div>
+                 <label for="">Mot de passe</label>
+              </div>
+              <!-- Champ Confirmation de mot de passe -->
+              <div class="input-data">
+                 <input type="password" required>
+                 <div class="underline"></div>
+                 <label for="">Confirmer le mot de passe</label>
+              </div>
+              <!-- Champ Bouton d'inscription -->
+              <div id="btn" class="input-data submit mt-4">
+                 <input id="inscrire" class="btn btn-primary" type="submit" value="S'inscrire" required>
+              </div>
+              <!-- Lien vers la page de connexion -->
+              <div class="input-data">
+                <p style="text-align: center;">Vous avez déjà un compte ? <a class="navlink" href="login.html">Se connecter</a></p>
+              </div>
+           <div class="form-row">
+        </form>
+      </div>
+      <!-- Fin contenu du formulaire -->
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar {
+  background-color: #02357a;
+  border-bottom: 3px solid blue;
+}
+#main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("bootstrap/img/backgroundFinal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  border-radius: 10px;
+  max-width: 400px;
+  height: 500px;
+  background-color: rgba(203, 203, 203, 0.9);
+  width: 380px;
+  border: 2px solid rgb(55, 3, 104);
+  padding-top: 20px;
+}
+.container .text {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(16, 16, 107);
+}
+.container form {
+  padding: 20px;
+  margin-top: 20px;
+}
+.container form .form-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+form .form-row .input-data{
+  position: relative;
+}
+form .form-row #inscrire {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.input-data input{
+  width: 100%;
+  display: block;
+  padding: 0 3px;
+  border: none;
+  font-size: 17px;
+  height: 30px;
+  border-radius: 5px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-25px);
+  font-size: 16px;
+  color: #074e7e;
+  font-weight: bold;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 3px;
+  margin-left: 3px;
+  letter-spacing: .5px;
+  font-size: 16px;
+  color: rgb(107, 109, 110);
+  transition: all 0.3s ease;
+}
+form .input-data .navlink {
+  text-decoration: none;
+  opacity: .8;
+  font-weight: bold;
+}
+form .input-data .navlink:hover {
+  opacity: 1;
+  color: blue;
+}
+
+</style>
