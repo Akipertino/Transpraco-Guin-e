@@ -31,7 +31,7 @@
       </div>
     </nav>
     <!-- Fin section menu de navigation -->
-    <div id="main-container" class="container-fluid pt-5">
+    <div id="main-container" class="container-fluid m-0">
       <!-- Contenu du formulaire -->
       <div class="container">
         <!-- Entête -->
@@ -65,11 +65,11 @@
                  <label for="">Confirmer le mot de passe</label>
               </div>
               <!-- Champ Bouton d'inscription -->
-              <div id="btn" class="input-data submit mt-4">
-                 <input id="inscrire" class="btn btn-primary" type="submit" value="S'inscrire" required>
-              </div>
+              <!-- <div id="btn" class="input-data submit mt-">
+              </div> -->
               <!-- Lien vers la page de connexion -->
-              <div class="input-data">
+              <div id="last-field" class="input-data mt-5">
+                <input id="inscrire" class="btn btn-primary" type="submit" value="S'inscrire" required>
                 <p style="text-align: center;">Vous avez déjà un compte ? <a class="navlink" href="login.html">Se connecter</a></p>
               </div>
            <div class="form-row">
@@ -89,25 +89,36 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  background-color: black;
+}
 .navbar {
   background-color: #02357a;
   border-bottom: 3px solid blue;
 }
+.navbar-brand {
+    font-size: clamp(.8rem, 1.5vw, 2.5rem);
+  }
 #main-container {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url("bootstrap/img/backgroundFinal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container {
   border-radius: 10px;
-  max-width: 400px;
+  width: 420px;
   height: 500px;
-  background-color: rgba(203, 203, 203, 0.9);
-  width: 380px;
+  background-color: rgba(203, 203, 203, .9);
   border: 2px solid rgb(55, 3, 104);
-  padding-top: 20px;
+  display: flex ;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 30px;
 }
 .container .text {
   text-align: center;
@@ -117,21 +128,29 @@
   color: rgb(16, 16, 107);
 }
 .container form {
-  padding: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
+  height: 100%;
 }
 .container form .form-row {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 25px;
 }
 form .form-row .input-data{
   position: relative;
 }
+
+form .form-row #last-field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
 form .form-row #inscrire {
   letter-spacing: 2px;
   font-weight: bold;
 }
+
 .input-data input{
   width: 100%;
   display: block;
@@ -167,6 +186,20 @@ form .input-data .navlink {
 form .input-data .navlink:hover {
   opacity: 1;
   color: blue;
+}
+
+@media screen and (max-width: 750px) {
+  .container .text {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 720px;
+  }
+  #inscrire {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
 }
 
 </style>

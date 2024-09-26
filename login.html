@@ -31,7 +31,7 @@
       </div>
     </nav>
     <!-- Fin section menu de navigation -->
-    <div id="main-container" class="container-fluid pt-5 bsg-primary">
+    <div id="main-container" class="container-fluid">
       <!-- Contenu du formulaire -->
       <div class="container">
         <!-- Entête -->
@@ -58,7 +58,7 @@
               </div>
               <!-- Lien vers la page de connexion -->
               <div class="input-data">
-                <p class="mt-1" style="text-align: center;">Vous n'avez pas de compte ? <a class="navlink" href="signup.html">S'inscrire</a></p>
+                <p style="text-align: center;">Vous n'avez pas de compte ? <a class="navlink" href="signup.html">S'inscrire</a></p>
               </div>
            <div class="form-row">
         </form>
@@ -73,18 +73,22 @@
 *{
   margin: 0;
   padding: 0;
-  outline: none;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.navbar-brand {
+    font-size: clamp(.8rem, 1.5vw, 2.5rem);
+  } 
 #main-container {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url("bootstrap/img/blueBack.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-color: #02357a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar {
   background-color: #02357a;
@@ -92,12 +96,12 @@
 }
 .container {
   border-radius: 10px;
-  max-width: 400px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   background-color: rgba(203, 203, 203, 0.9);
-  width: 380px;
   border: 2px solid rgb(65, 25, 241);
   padding-top: 20px;
+  
 }
 .container .text {
   text-align: center;
@@ -107,13 +111,13 @@
   color: #02357a;
 }
 .container form {
-  padding: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .container form .form-row {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  height: 100%;
 }
 form .form-row .input-data{
   position: relative;
@@ -157,6 +161,23 @@ form .input-data .navlink {
 form .input-data .navlink:hover {
   opacity: 1;
   color: blue;
+}
+
+@media screen and (max-width: 750px) {
+  #main-container {
+    background-image: url("bootstrap/img/liv.jpg");
+    background-size: cover;
+  }
+  .container .text {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 720px;
+  }
+  #continuer {
+    font-size: 1rem;
+    font-weight: normal;
+  }
 }
 
 </style>
